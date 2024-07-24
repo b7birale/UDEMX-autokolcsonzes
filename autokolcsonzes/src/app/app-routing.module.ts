@@ -7,8 +7,8 @@ const routes: Routes = [
     loadChildren: () => import('./pages/reservations/reservations.module').then(m => m.ReservationsModule) 
   },
   { 
-    path: 'friends', 
-    loadChildren: () => import('./pages/friends/friends.module').then(m => m.FriendsModule) 
+    path: 'edit', 
+    loadChildren: () => import('./pages/edit/edit.module').then(m => m.EditModule) 
   },
   { 
     path: 'cars', 
