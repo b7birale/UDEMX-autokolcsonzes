@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { 
-    path: 'profile', 
-    loadChildren: () => import('./pages/profile/profile.module').then(m => m.ProfileModule) 
+    path: 'reservations', 
+    loadChildren: () => import('./pages/reservations/reservations.module').then(m => m.ReservationsModule) 
   },
   { 
     path: 'friends', 
