@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { FeedRoutingModule } from './feed-routing.module';
-import { FeedComponent } from './feed.component';
+import { CarsRoutingModule } from './cars-routing.module';
+import { CarsComponent } from './cars.component';
 //import { MenuComponent } from '../../shared/menu/menu.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DateFormatPipe } from '../../shared/pipes/date-format.pipe';
@@ -10,14 +10,14 @@ import { DateFormatPipe } from '../../shared/pipes/date-format.pipe';
 
 @NgModule({
   declarations: [
-    FeedComponent,
+    CarsComponent,
     DateFormatPipe
   ],
   imports: [
     CommonModule,
-    FeedRoutingModule,
+    CarsRoutingModule,
     FormsModule,
     ReactiveFormsModule
   ]
 })
-export class FeedModule { }
+export class CarsModule { }

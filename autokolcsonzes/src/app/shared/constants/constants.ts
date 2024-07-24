@@ -1,4 +1,4 @@
-export const FeedObject = [
+export const CarsObject = [
 
         {
           'id': 'OQyRttOV4l8',

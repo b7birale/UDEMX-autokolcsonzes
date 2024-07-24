@@ -24,7 +24,7 @@ export class LoginComponent {
   login(){
     if(this.email.value !== null && this.password.value !== null){
       this.delayService.delayWithPromise(this.email.value, this.password.value).then((data: boolean) => {
-        this.router.navigateByUrl('/feed');
+        this.router.navigateByUrl('/cars');
       }).catch(error => {
         console.error('Incorrect email or password!');
       }).finally(() => {

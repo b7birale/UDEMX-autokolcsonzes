@@ -1,17 +1,17 @@
 import { Component } from '@angular/core';
-import { FeedObject } from '../../shared/constants/constants';
+import { CarsObject } from '../../shared/constants/constants';
 import { Comment } from '../../shared/models/Comment';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-feed',
-  templateUrl: './feed.component.html',
-  styleUrl: './feed.component.scss'
+  selector: 'app-cars',
+  templateUrl: './cars.component.html',
+  styleUrl: './cars.component.scss'
 })
 
-export class FeedComponent {
-  feedObject: Array<any> = FeedObject;
+export class CarsComponent {
+  carsObject: Array<any> = CarsObject;
 
   chosenImage: any;
 
@@ -35,11 +35,6 @@ export class FeedComponent {
     return formGroup;
   }
 
-  /*
-  constructor(){
-    this.chosenImage = this.feedObject[0];
-  }
-  */
 
 
   reload(){
@@ -54,7 +49,7 @@ export class FeedComponent {
         //this.comments.push({...this.commentObject});
   
         this.comments.push({...this.commentsForm.value as Comment});
-        ///this.router.navigateByUrl('/feed');
+        ///this.router.navigateByUrl('/cars');
         //console.log("Sikeres komment :)");
   
         //másik megoldás:

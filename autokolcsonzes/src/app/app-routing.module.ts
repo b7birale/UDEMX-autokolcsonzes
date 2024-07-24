@@ -11,8 +11,8 @@ const routes: Routes = [
     loadChildren: () => import('./pages/friends/friends.module').then(m => m.FriendsModule) 
   },
   { 
-    path: 'feed', 
-    loadChildren: () => import('./pages/feed/feed.module').then(m => m.FeedModule) 
+    path: 'cars', 
+    loadChildren: () => import('./pages/cars/cars.module').then(m => m.CarsModule) 
   },
   { 
     path: 'not-found', 
@@ -20,7 +20,7 @@ const routes: Routes = [
   },
   { 
     path: '', 
-    redirectTo: '/feed',
+    redirectTo: '/cars',
     pathMatch: 'full'
   },
   { path: 'login', loadChildren: () => import('./pages/login/login.module').then(m => m.LoginModule) },

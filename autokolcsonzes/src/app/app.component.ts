@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'fake-face';
-  page = 'feed';
+  page = 'cars';
 
   changePage(selectedPage: string){
     this.page = selectedPage;
