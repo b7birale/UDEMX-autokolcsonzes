@@ -30,7 +30,7 @@ Elemei:
 
 Az űrlap kitöltése után a Reserve (foglalás) gomb segítségével lehet véglegesíteni a foglalást.
 
-<span style="color:red">Minden mezőt kötelező kitölteni a sikeres foglaláshoz!</span>
+>Minden mezőt kötelező kitölteni a sikeres foglaláshoz!
 
 Egyéb validátorok:
 - A név legalább két karakter hosszú kell legyen
