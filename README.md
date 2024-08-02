@@ -30,7 +30,7 @@ Elemei:
 
 Az űrlap kitöltése után a Reserve (foglalás) gomb segítségével lehet véglegesíteni a foglalást.
 
->Minden mezőt kötelező kitölteni a sikeres foglaláshoz!
+**Minden mezőt kötelező kitölteni a sikeres foglaláshoz!**
 
 Egyéb validátorok:
 - A név legalább két karakter hosszú kell legyen
@@ -62,7 +62,7 @@ A regisztráció funkciót valósítja meg ez az oldal.
 
 A regisztrációhoz egy email cím, egy jelszó, egy kereszt- és egy vezetéknév szükségeltetik.
 
-<span style="color:red">Az applikáció egyelőre nem tud új felhasználókat elmenteni!</span>
+**Az applikáció egyelőre nem tud új felhasználókat elmenteni!**
 
 A Back gombra kattintva visszaléphetünk az előzőleg meglátogatott oldalra.
 
