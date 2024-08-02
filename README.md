@@ -11,7 +11,7 @@ Nyelv: **Angular**
 - **Register**: Regisztráció
 - **Not-found**: "Nem található"
 
-<br><br>
+<br>
 
 ### Cars
 
@@ -41,13 +41,13 @@ Egyéb validátorok:
 
 Ha az űrlap kitöltése szabályosan megtörtént és a foglalás sikeres volt, megjelnnek a foglalás adatai egy táblázatban az autó fotója alatt. (Ez a funkció ideiglenes!)
 
-<br><br>
+<br>
 
 ### Edit
 
 _Fejlesztés alatt._
 
-<br><br>
+<br>
 
 ### Reservations
 
