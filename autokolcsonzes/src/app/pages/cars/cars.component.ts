@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CarsObject } from '../../shared/constants/constants';
 import { Comment } from '../../shared/models/Comment';
+import { PersonalData } from '../../shared/models/PersonalData';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
@@ -16,11 +17,25 @@ export class CarsComponent {
   chosenImage: any;
 
   //commentObject: Comment = {};
-  comments: Array<Comment> = []; //egyelőre ebben a tömbben tároljuk a kommenteket -> később erre adatbázis lesz ofc
+  //comments: Array<Comment> = []; //egyelőre ebben a tömbben tároljuk a kommenteket -> később erre adatbázis lesz ofc
 
+  reservations: Array<PersonalData> = [];
+
+  /*
   commentsForm = this.createForm({
     username: '',
     comment: '',
+    date: new Date()
+  })
+  */
+
+  reservationForm = this.createForm({
+    name: '',
+    email: '',
+    address: '',
+    phone: '',
+    days: 0,
+    price: 0,
     date: new Date()
   })
 
@@ -28,10 +43,14 @@ export class CarsComponent {
     //console.log("Ez a konstruktor");
   }
 
-  createForm(model: Comment){
+  createForm(model: PersonalData){
     let formGroup = this.fb.group(model);
-    formGroup.get('username')?.addValidators([Validators.required]);
-    formGroup.get('comment')?.addValidators([Validators.required, Validators.minLength(10)]);
+    formGroup.get('name')?.addValidators([Validators.required, Validators.minLength(2)]);
+    formGroup.get('email')?.addValidators([Validators.required, Validators.email]);
+    formGroup.get('address')?.addValidators([Validators.required]);
+    formGroup.get('phone')?.addValidators([Validators.required]);
+    formGroup.get('days')?.addValidators([Validators.required]);
+    formGroup.get('price')?.addValidators([Validators.required]);
     return formGroup;
   }
 
@@ -41,6 +60,7 @@ export class CarsComponent {
     
   }
 
+  /*
   addComment() {
     if (this.commentsForm.valid){
       if(this.commentsForm.get('username') && this.commentsForm.get('comment')){
@@ -55,10 +75,29 @@ export class CarsComponent {
         //másik megoldás:
         //this.comments.push(Object.assign({}, this.commentObject));
       }
-    } /*else{
-      console.log("Sikertelen komment!");
-    }*/
+    } 
+
+  } */
+  
+
+  
+  addReservation() {
+    if (this.reservationForm.valid){
+      if(this.reservationForm.get('name') && this.reservationForm.get('email') && this.reservationForm.get('address') 
+      && this.reservationForm.get('phone') && this.reservationForm.get('days') && this.reservationForm.get('price')){
+        this.reservationForm.get('date')?.setValue(new Date());
+        //this.reservationForm.get('price')?.setValue();
+  
+        this.reservations.push({...this.reservationForm.value as PersonalData});
+        ///this.router.navigateByUrl('/cars');
+        //console.log("Sikeres komment :)");
+  
+        //másik megoldás:
+        //this.comments.push(Object.assign({}, this.commentObject));
+      }
+    }
 
   }
+
 
 }

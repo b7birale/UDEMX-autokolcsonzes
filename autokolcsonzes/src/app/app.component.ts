@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'fake-face';
+  title = 'car-renting';
   page = 'cars';
 
   changePage(selectedPage: string){
