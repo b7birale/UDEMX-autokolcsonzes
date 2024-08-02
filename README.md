@@ -33,10 +33,10 @@ Az űrlap kitöltése után a Reserve (foglalás) gomb segítségével lehet vé
 
 **Minden mezőt kötelező kitölteni a sikeres foglaláshoz!**
 
-Egyéb validátorok:
-- A név legalább két karakter hosszú kell legyen
-- Az email ténylegesen email formátumú (Szerepel benne a @ és a .com)
-<br>
+>Egyéb validátorok:
+>- A név legalább két karakter hosszú kell legyen
+>- Az email ténylegesen email formátumú (Szerepel benne a @ és a .com)
+><br>
 
 
 Ha az űrlap kitöltése szabályosan megtörtént és a foglalás sikeres volt, megjelnnek a foglalás adatai egy táblázatban az autó fotója alatt. (Ez a funkció ideiglenes!)
@@ -59,7 +59,7 @@ _Fejlesztés alatt._
 
 Ez az oldal a bejelentkezés funkciót valósítja meg.
 
-Egyelőre a **'test@gmail.com' - 'testpw'** felhasználónév-jelszó párossal lehet kipróbálni.
+Egyelőre a **test@gmail.com - testpw** felhasználónév-jelszó párossal lehet kipróbálni.
 
 A Sign Up gombra kattintva a program átirányít a regisztrációs felületre.
 
@@ -67,7 +67,7 @@ A Sign Up gombra kattintva a program átirányít a regisztrációs felületre.
 
 ### Register
 
-A regisztráció funkciót valósítja meg ez az oldal.
+Ez az oldal a regisztráció funkciót valósítja meg.
 
 A regisztrációhoz egy email cím, egy jelszó, egy kereszt- és egy vezetéknév szükségeltetik.
 
