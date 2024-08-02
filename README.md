@@ -36,7 +36,7 @@ Az űrlap kitöltése után a Reserve (foglalás) gomb segítségével lehet vé
 >Egyéb validátorok:
 >- A név legalább két karakter hosszú kell legyen
 >- Az email ténylegesen email formátumú (Szerepel benne a @ és a .com)
-><br>
+<br>
 
 
 Ha az űrlap kitöltése szabályosan megtörtént és a foglalás sikeres volt, megjelnnek a foglalás adatai egy táblázatban az autó fotója alatt. (Ez a funkció ideiglenes!)
