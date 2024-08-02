@@ -11,6 +11,7 @@ Nyelv: **Angular**
 - **Register**: Regisztráció
 - **Not-found**: "Nem található"
 
+<br><br>
 
 ### Cars
 
@@ -26,7 +27,7 @@ Elemei:
 - **days**: napok száma, melyekre a foglalás vonatkozik
 - **price**: ár
 <br>
-<br>
+
 
 Az űrlap kitöltése után a Reserve (foglalás) gomb segítségével lehet véglegesíteni a foglalást.
 
@@ -36,17 +37,23 @@ Egyéb validátorok:
 - A név legalább két karakter hosszú kell legyen
 - Az email ténylegesen email formátumú (Szerepel benne a @ és a .com)
 <br>
-<br>
+
 
 Ha az űrlap kitöltése szabályosan megtörtént és a foglalás sikeres volt, megjelnnek a foglalás adatai egy táblázatban az autó fotója alatt. (Ez a funkció ideiglenes!)
+
+<br><br>
 
 ### Edit
 
 _Fejlesztés alatt._
 
+<br><br>
+
 ### Reservations
 
 _Fejlesztés alatt._
+
+<br>
 
 ### Login
 
@@ -55,6 +62,8 @@ Ez az oldal a bejelentkezés funkciót valósítja meg.
 Egyelőre a **'test@gmail.com' - 'testpw'** felhasználónév-jelszó párossal lehet kipróbálni.
 
 A Sign Up gombra kattintva a program átirányít a regisztrációs felületre.
+
+<br>
 
 ### Register
 
@@ -65,6 +74,8 @@ A regisztrációhoz egy email cím, egy jelszó, egy kereszt- és egy vezetékn�
 **Az applikáció egyelőre nem tud új felhasználókat elmenteni!**
 
 A Back gombra kattintva visszaléphetünk az előzőleg meglátogatott oldalra.
+
+<br>
 
 ### Not-found
 
